@@ -10,7 +10,7 @@ const CardSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://3.110.214.89:3000/jobs');
+        const response = await axios.get('https://3.110.214.89:3000/jobs');
         setCards(response.data);
         setIsLoading(false);
         console.log("Data fetched successfully");
